@@ -4,16 +4,47 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Google Meet Clone</title>
+  <style>
+@media (max-width: 900px) {
+
+  .container {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .left-section {
+    max-width: 100% !important;
+  }
+
+  .right-section {
+    width: 100% !important;
+    margin-top: 40px;
+  }
+
+  h1 {
+    font-size: 36px !important;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 28px !important;
+  }
+
+}
+</style>
 </head>
 
 <body>
 
 <div style="font-family:Arial, sans-serif; padding:40px; background:#f1f3f4;">
 
-  <div style="display:flex; justify-content:space-between; align-items:center; max-width:1200px; margin:auto;">
+  <div class="container" style="display:flex; justify-content:space-between; align-items:center; max-width:1200px; margin:auto;">
 
     <!-- Left Content -->
-    <div style="max-width:520px;">
+    <div class="left-section" style="max-width:520px;">
 
       <div style="display:flex; align-items:center; gap:10px; margin-bottom:20px;">
         <img src="https://drive.google.com/uc?export=view&id=1-QSD-au9NpaqO8uh8sSlEAkMeWNPqfm8" width="28">
@@ -51,7 +82,7 @@
     </div>
 
     <!-- Right Video Section -->
-    <div style="position:relative; width:420px;">
+    <div class="right-section" style="position:relative; width:420px;">
 
       <img 
         src="https://drive.google.com/uc?export=view&id=1u0Xi_pYsrrYIYXwnSuDXsPqBP-8hgoO2"
