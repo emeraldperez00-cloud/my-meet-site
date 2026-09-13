@@ -1,66 +1,41 @@
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- <title>Google Meet</title> -->
-  <style>
-@media (max-width: 900px) {
-  .container {
-    flex-direction: column !important;
-    text-align: center;
-  }
-  .left-section {
-    max-width: 100% !important;
-  }
-  .right-section {
-    width: 100% !important;
-    margin-top: 40px;
-  }
-  h1 {
-    font-size: 36px !important;
-  }
-
-  /* Mobile layout fix */
-  body {
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow-x: hidden !important;
-  }
-
-  body > div:first-child {
-    box-sizing: border-box !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 auto !important;
-    padding: 40px 20px !important;
-  }
-
-  img {
-    max-width: 100% !important;
-    height: auto !important;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 28px !important;
-  }
-
-  body > div:first-child {
-    padding: 30px 15px !important;
-  }
-}
-</style>
-</head>
-
-<body>
-<div style="font-family:Arial, sans-serif; background:#f1f3f4; padding:550px 355px; max-width:360px; margin:auto;">
-  <!-- Logo -->
-  <div style="display:flex; align-items:center; gap:10px; justify-content:center; margin-bottom:40px;">
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<!-- <title>Google Meet</title> --> 
+  <style> 
+@media (max-width: 900px) { 
+  .container { 
+    flex-direction: column !important; 
+    text-align: center; 
+  } 
+  .left-section { 
+    max-width: 100% !important; 
+  } 
+  .right-section { 
+    width: 100% !important; 
+    margin-top: 40px; 
+  } 
+  h1 { 
+    font-size: 36px !important; 
+  } 
+} 
+@media (max-width: 480px) { 
+ 
+  h1 { 
+    font-size: 28px !important; 
+  } 
+} 
+</style> 
+</head> 
+ 
+<body> 
+<div style="font-family:Arial, sans-serif; background:#f1f3f4; padding:50px 40px; max-width:60px; margin:auto;"> 
+  <!-- Logo --> 
+  <div style="display:flex; align-items:center; gap:10px; justify-content:center; margin-bottom:20px;"> 
     <img src="https://raw.githubusercontent.com/emeraldperez00-cloud/img/refs/heads/main/logo_meet_2026_1x_6468c1b9f0dedbff2aa2a8e003f73eca.jpeg">
-    <span style="color:#5f6368; font-weight:500;"> </span>
+    <span style="color:#5f6368; font-weight:100;"> </span>
   </div>
   <!-- Heading -->
   <h1 style="font-size:32px; text-align:center; margin:0 0 15px 0; line-height:1.2;">
@@ -135,28 +110,23 @@
 <div style="max-width: 500px; margin: 15px auto; background: #ffffff; padding: 10px 10px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
 <h2 style="font-size: 20px; color: #1a73e8; text-align:center;">
    Open the chat message meeting link URL</h2>
-<img src="https://raw.githubusercontent.com/emeraldperez00-cloud/images/refs/heads/main/unnamed%20(7).png"
-  style="width:100%; border-radius:8px; margin-bottom:10px;">
-<div style="text-align: center; font-size: 20px; margin: 20px 0 30px 0;">
-</div>
-<p style="font-size: 16px; line-height: 1.6;">
-If you don’t have enough time to schedule a meeting or book a room,
-you can join a video meeting with a link.
-</p>
-<ol style="padding-left: 20px;">
-<li>Open the chat message meeting link.</li>
-<li>Enter the meeting code In the window</li>
-<li>click <strong>Join now</strong>.</li>
-</ol>
-<p style="font-size: 15px;">
-<strong>Tip:</strong> If you're not on the calendar invite,
-you need to request to join and the meeting organizer must let you in.
-</p>
-</div>
-</body>
+<img src="https://raw.githubusercontent.com/emeraldperez00-cloud/images/refs/heads/main/unnamed%20(7).png" 
+  style="width:100%; border-radius:8px; margin-bottom:10px;"> 
+<div style="text-align: center; font-size: 20px; margin: 20px 0 30px 0;"> 
+</div> 
+<p style="font-size: 16px; line-height: 1.6;"> 
+If you don’t have enough time to schedule a meeting or book a room, 
+you can join a video meeting with a link. 
+</p> 
+<ol style="padding-left: 20px;"> 
+<li>Open the chat message meeting link.</li> 
+<li>Enter the meeting code In the window</li> 
+<li>click <strong>Join now</strong>.</li> 
+</ol> 
+<p style="font-size: 15px;"> 
+<strong>Tip:</strong> If you're not on the calendar invite, 
+you need to request to join and the meeting organizer must let you in. 
+</p> 
+</div> 
+</body> 
 </html>
-```
-
-The only functional change is the mobile CSS: it prevents horizontal overflow, makes the main container fit the viewport, makes images responsive, and reduces mobile padding. Everything else remains as you provided it.
-
-I can also create a simple visual showing how the responsive layout works.
