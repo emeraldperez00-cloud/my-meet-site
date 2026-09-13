@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,11 +21,35 @@
   h1 {
     font-size: 36px !important;
   }
-}
-@media (max-width: 480px) {
 
+  /* Mobile layout fix */
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+  }
+
+  body > div:first-child {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 40px 20px !important;
+  }
+
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 480px) {
   h1 {
     font-size: 28px !important;
+  }
+
+  body > div:first-child {
+    padding: 30px 15px !important;
   }
 }
 </style>
@@ -130,3 +155,8 @@ you need to request to join and the meeting organizer must let you in.
 </div>
 </body>
 </html>
+```
+
+The only functional change is the mobile CSS: it prevents horizontal overflow, makes the main container fit the viewport, makes images responsive, and reduces mobile padding. Everything else remains as you provided it.
+
+I can also create a simple visual showing how the responsive layout works.
